@@ -9,7 +9,7 @@ Get an API Key from Open Weather API. Visit https://openweathermap.org/api/one-c
 You can install this library via Composer. Run the following command:
 
 ```bash
-composer require stuarttodd-dev/WeatherForecastAPI
+composer require composer require stuarttodd-dev/weather-forecast-app
 ```
 ## Static Usage
 
