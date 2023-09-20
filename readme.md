@@ -17,11 +17,6 @@ composer require stuarttodd-dev/WeatherForecastAPI
 
 use StuartToddDev\WeatherForecast\Services\WeatherForecast;
 
-// Initialize the geolocation and weather forecast services
-$geolocationAPI = new GeolocationIPAPI('your_geolocation_api_key');
-$forecastAPI = new OpenWeatherAPI('your_weather_forecast_api_key');
-
-// Initialize the WeatherForecast class
 $weatherForecast = WeatherForecast::create('your-ip-address', 'your-open-weather-api-key');
 
 $weatherForecast->getIpAddress(); // returns ip
@@ -29,7 +24,7 @@ $weatherForecast->getGeolocation(); // returns ['lon' => 'your-lon', 'lat' => 'y
 $weatherForecast->getForecast(); // Json string from open weather API (see https://openweathermap.org/api/one-call-3)
 ```
 
-## Inject API Services Usage
+## Inject API Services
 
 ```
 use StuartToddDev\WeatherForecast\Services\WeatherForecast;
