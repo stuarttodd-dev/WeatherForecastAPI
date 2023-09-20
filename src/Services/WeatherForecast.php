@@ -35,12 +35,9 @@ class WeatherForecast
         return $this->geoLocationAPI->getIPAddress();
     }
 
-    public function getGeolocation(): array
+    public function getGeolocation(): string
     {
-        return [
-            'lon' => $this->forecastAPI->getLon(),
-            'lat' => $this->forecastAPI->getLat()
-        ];
+        return $this->geoLocationAPI->getGeoLocation();
     }
 
     public function getForecast(): string

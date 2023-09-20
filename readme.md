@@ -20,7 +20,7 @@ use StuartToddDev\WeatherForecast\Services\WeatherForecast;
 $weatherForecast = WeatherForecast::create('your-ip-address', 'your-open-weather-api-key');
 
 $weatherForecast->getIpAddress(); // returns ip
-$weatherForecast->getGeolocation(); // returns ['lon' => 'your-lon', 'lat' => 'your-lat']
+$weatherForecast->getGeolocation(); // e.g {"status":"success","country":"United Kingdom","countryCode":"GB","region":"ENG","regionName":"England","city":"Stockton-on-Tees","zip":"TS18","lat":54.5579,"lon":-1.328,"timezone":"Europe/London","isp":"Virgin Media","org":"","as":"AS5089 Virgin Media Limited","query":"86.22.157.53"}
 $weatherForecast->getForecast(); // Json string from open weather API (see https://openweathermap.org/api/one-call-3)
 ```
 
@@ -40,7 +40,7 @@ You can inject different API services (or adjust them) as long as they implement
 // Initialize the WeatherForecast class
 $weatherForecast = new WeatherForecast('your-ip-address', 'your-open-weather-api-key', $geolocationAPI, $forecastAPI);
 $weatherForecast->getIpAddress(); // returns ip
-$weatherForecast->getGeolocation(); // returns ['lon' => 'your-lon', 'lat' => 'your-lat']
+$weatherForecast->getGeolocation(); // e.g {"status":"success","country":"United Kingdom","countryCode":"GB","region":"ENG","regionName":"England","city":"Stockton-on-Tees","zip":"TS18","lat":54.5579,"lon":-1.328,"timezone":"Europe/London","isp":"Virgin Media","org":"","as":"AS5089 Virgin Media Limited","query":"86.22.157.53"}
 $weatherForecast->getForecast(); // Json string from open weather API (see https://openweathermap.org/api/one-call-3)
 ```
 
