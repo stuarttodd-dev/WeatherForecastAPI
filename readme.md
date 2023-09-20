@@ -38,7 +38,7 @@ $forecastAPI = new OpenWeatherAPI(new Client()'); // first param is Guzzle clien
 You can inject different API services (or adjust them) as long as they implement the relevant contracts (noted below).
 
 // Initialize the WeatherForecast class
-$weatherForecast = WeatherForecast::create('your-ip-address', 'your-open-weather-api-key', $geolocationAPI, $forecastAPI);
+$weatherForecast = new WeatherForecast('your-ip-address', 'your-open-weather-api-key', $geolocationAPI, $forecastAPI);
 $weatherForecast->getIpAddress(); // returns ip
 $weatherForecast->getGeolocation(); // returns ['lon' => 'your-lon', 'lat' => 'your-lat']
 $weatherForecast->getForecast(); // Json string from open weather API (see https://openweathermap.org/api/one-call-3)
