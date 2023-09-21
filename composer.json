@@ -1,6 +1,7 @@
 {
   "name": "stuarttodd-dev/weather-forecast-app",
   "description": "A package for retrieving weather forecasts based on IP addresses and timestamps.",
+  "minimum-stability": "stable",
   "type": "library",
   "license": "MIT",
   "authors": [
