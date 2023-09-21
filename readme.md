@@ -11,6 +11,15 @@ You can install this library via Composer. Run the following command:
 ```bash
 composer require stuarttodd-dev/weather-forecast-app
 ```
+
+## Configure composer.json
+Package is still under development.
+
+```
+"minimum-stability": "dev",
+```
+
+
 ## Static Usage
 
 ```
